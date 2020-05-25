@@ -19,9 +19,9 @@ public class StepbyStepActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stepbystep);
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation) ;
-       /* Menu menu = bottomNavigationView.getMenu();
+       Menu menu = bottomNavigationView.getMenu();
         MenuItem menuItem = menu.getItem(3);
-        menuItem.setChecked(true);*/
+        menuItem.setChecked(true);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -31,18 +31,19 @@ public class StepbyStepActivity extends AppCompatActivity {
                             case R.id.page_1:
                                 Intent intent = new Intent(StepbyStepActivity.this, FaqActivity.class);
                                 startActivity(intent);
+                                overridePendingTransition(0,0);
                                 break;
                             case R.id.page_2:
-                                Intent intent1 = new Intent(StepbyStepActivity.this, StepbyStepActivity.class);
-                                startActivity(intent1);
                                 break;
                             case R.id.page_3:
                                 Intent intent2 = new Intent(StepbyStepActivity.this, MainActivity.class);
                                 startActivity(intent2);
+                                overridePendingTransition(0,0);
                                 break;
                             case R.id.page_4:
                                 Intent intent3 = new Intent(StepbyStepActivity.this, ResearchesActivity.class);
                                 startActivity(intent3);
+                                overridePendingTransition(0,0);
                                 break;
 
                         }

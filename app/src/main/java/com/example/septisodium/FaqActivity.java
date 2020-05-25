@@ -19,9 +19,9 @@ public class FaqActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faq);
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation) ;
-        /*Menu menu = bottomNavigationView.getMenu();
+        Menu menu = bottomNavigationView.getMenu();
         MenuItem menuItem = menu.getItem(0);
-        menuItem.setChecked(true);*/
+        menuItem.setChecked(true);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -29,20 +29,22 @@ public class FaqActivity extends AppCompatActivity {
 
                         switch (item.getItemId()) {
                             case R.id.page_1:
-                                Intent intent = new Intent(FaqActivity.this, FaqActivity.class);
-                                startActivity(intent);
+
                                 break;
                             case R.id.page_2:
                                 Intent intent1 = new Intent(FaqActivity.this, StepbyStepActivity.class);
                                 startActivity(intent1);
+                                overridePendingTransition(0,0);
                                 break;
                             case R.id.page_3:
                                 Intent intent2 = new Intent(FaqActivity.this, MainActivity.class);
                                 startActivity(intent2);
+                                overridePendingTransition(0,0);
                                 break;
                             case R.id.page_4:
                                 Intent intent3 = new Intent(FaqActivity.this, ResearchesActivity.class);
                                 startActivity(intent3);
+                                overridePendingTransition(0,0);
                                 break;
 
                         }

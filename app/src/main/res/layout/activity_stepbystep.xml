@@ -25,72 +25,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:layout_width="402dp"
-        android:layout_height="32dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="10dp"
-        android:text="About The Researches"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.842" />
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="match_parent"
-        android:layout_height="408dp"
-        android:fillViewport="true"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0">
-
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:stretchColumns="2">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="377dp"
-                android:layout_height="254dp">
-
-                <androidx.cardview.widget.CardView
-
-                    android:layout_width="358dp"
-
-
-                    android:layout_height="170dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.494"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.313">
-
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="165dp"
-                        android:paddingHorizontal="15dp"
-                        android:paddingTop="15dp"
-                        android:text="The coronavirus pandemic has lead to an increase in air quality all around the world. Lockdowns have resulted in factories and roads shutting, thus reducing emissions.
-
-Reuters visualisations, based on data from NASA’s Global Modeling and Data Assimilation team, show how concentrations of some pollutants fell drastically after the lockdowns started.
-" />
-                </androidx.cardview.widget.CardView>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:paddingLeft="10dp"
-                android:text="Wilayas of Researches "
-                android:textStyle="bold" />
-
-        </TableLayout>
-    </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

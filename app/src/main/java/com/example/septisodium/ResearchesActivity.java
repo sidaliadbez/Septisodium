@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Switch;
 import android.widget.Toast;
 
@@ -52,6 +53,29 @@ public class ResearchesActivity extends AppCompatActivity {
                 }
 
                 return true;
+            }
+        });
+
+
+
+
+        View card = findViewById(R.id.khmissacard);
+        card.setOnClickListener(new  View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ResearchesActivity.this, KhmissaInfoActivity.class);
+                startActivity(intent);
+                overridePendingTransition(0,0);
+            }
+        });
+
+        View card2 = findViewById(R.id.timgadecard);
+        card2.setOnClickListener(new  View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ResearchesActivity.this, TimgadeInfoActivity.class);
+                startActivity(intent);
+                overridePendingTransition(0,0);
             }
         });
     }

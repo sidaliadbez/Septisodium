@@ -19,6 +19,8 @@
         <activity android:name=".StepbyStepActivity"/>
         <activity android:name=".ResearchesActivity"/>
         <activity android:name=".FaqActivity"/>
+        <activity android:name=".KhmissaInfoActivity"/>
+        <activity android:name=".TimgadeInfoActivity"/>
     </application>
 
 </manifest>

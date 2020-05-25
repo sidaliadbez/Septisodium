@@ -92,6 +92,7 @@ Reuters visualisations, based on data from NASA’s Global Modeling and Data Ass
                 android:layout_height="200dp">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/khmissacard"
                     android:layout_width="358dp"
                     android:layout_height="135dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -127,6 +128,7 @@ Reuters visualisations, based on data from NASA’s Global Modeling and Data Ass
                 android:layout_height="200dp">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/timgadecard"
                     android:layout_width="358dp"
                     android:layout_height="135dp"
                     app:layout_constraintBottom_toBottomOf="parent"

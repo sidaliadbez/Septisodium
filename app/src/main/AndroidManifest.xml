@@ -33,6 +33,7 @@
         <activity android:name=".FaqActivity"/>
         <activity android:name=".KhmissaInfoActivity"/>
         <activity android:name=".TimgadeInfoActivity"/>
+        <activity android:name=".DetailObjectActivity"/>
     </application>
 
 </manifest>

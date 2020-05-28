@@ -12,12 +12,12 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class StepbyStepActivity extends AppCompatActivity {
-    Boolean exp =false ;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -28,25 +28,9 @@ public class StepbyStepActivity extends AppCompatActivity {
        Menu menu = bottomNavigationView.getMenu();
         MenuItem menuItem = menu.getItem(3);
         menuItem.setChecked(true);
-        LinearLayout linearLayout ;
-        final RelativeLayout expandableLayout ;
-        linearLayout= findViewById(R.id.linear_layout);
-        expandableLayout= findViewById(R.id.expandable_layout);
-        expandableLayout.setVisibility(View.GONE);
+        TextView textView = findViewById(R.id.text);
+        textView.bringToFront();
 
-
-        linearLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(!exp){
-                    exp=true ;
-                    expandableLayout.setVisibility(View.VISIBLE);
-                }else {
-                    exp=false ;
-                    expandableLayout.setVisibility(View.GONE);
-                }
-            }
-        });
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem item) {

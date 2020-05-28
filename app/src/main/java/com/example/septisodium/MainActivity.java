@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -24,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
     Menu menu = bottomNavigationView.getMenu();
         MenuItem menuItem = menu.getItem(2);
         menuItem.setChecked(true);
-
+        TextView textView = findViewById(R.id.textseptiso);
+        textView.bringToFront();
         View card = findViewById(R.id.cardView);
         card.setOnClickListener(new  View.OnClickListener() {
             @Override

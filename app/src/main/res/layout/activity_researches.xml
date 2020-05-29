@@ -7,17 +7,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:weightSum="10">
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3.1">
+        android:layout_weight="8.8"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="2">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+>
 
     <TextView
         android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:text="Step By Step"
+        android:text="Researches"
         android:textAlignment="center"
         android:textColor="#000"
         android:textSize="30dp"
@@ -37,21 +52,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="5.7"
-        android:fillViewport="true"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0">
 
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:stretchColumns="2">
 
             <TextView
                 android:layout_width="402dp"
@@ -126,8 +127,7 @@ Reuters visualisations, based on data from NASA’s Global Modeling and Data Ass
                             android:layout_width="206dp"
                             android:layout_height="match_parent"
                             android:padding="10dp"
-                            android:background="@drawable/costum_card_wilaya"
-                            android:src="@drawable/khemissa" />
+                            android:background="@drawable/costum_card_wilaya"                            android:src="@drawable/khemissa" />
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"

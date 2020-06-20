@@ -62,16 +62,12 @@ public class FlightsFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
         objectTemoinList= new ArrayList<>();
-        objectTemoinList.add(new objectTemoin("un nom","truc1","truc2","truc3"));
-        objectTemoinList.add(new objectTemoin("un nom3","truc1","truc2","truc3"));
-        objectTemoinList.add(new objectTemoin("un nom4","truc1","truc2","truc3"));
-        objectTemoinList.add(new objectTemoin("un nom5","truc1","truc2","truc3"));
-        objectTemoinList.add(new objectTemoin("un nom","truc1","truc2","truc3"));
-        objectTemoinList.add(new objectTemoin("un nom3","truc1","truc2","truc3"));
-        objectTemoinList.add(new objectTemoin("un nom4","truc1","truc2","truc3"));
-        objectTemoinList.add(new objectTemoin("un nom5","truc1","truc2","truc3"));
-
-        objectTemoinList.add(new objectTemoin("un nom2","truc1","truc2","truc3"));
+        objectTemoinList.add(new objectTemoin("un nom","truc1","truc2","truc3",R.drawable.khemissa));
+        objectTemoinList.add(new objectTemoin("un nom3","truc1","truc2","truc3",R.drawable.khemissa));
+        objectTemoinList.add(new objectTemoin("un nom4","truc1","truc2","truc3",R.drawable.khemissa));
+        objectTemoinList.add(new objectTemoin("un nom5","truc1","truc2","truc3",R.drawable.khemissa));
+        objectTemoinList.add(new objectTemoin("un nom","truc1","truc2","truc3",R.drawable.khemissa));
+        objectTemoinList.add(new objectTemoin("un nom3","truc1","truc2","truc3",R.drawable.khemissa));
 
     }
 

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -35,6 +36,7 @@ List<objectTemoin> objectTemoinList ;
         holder.caracteristique1.setText(objectTemoinList.get(position).getCaracteristique1());
         holder.caracteristique2.setText(objectTemoinList.get(position).getCaracteristique2());
         holder.caracteristique3.setText(objectTemoinList.get(position).getCaracteristique3());
+        holder.imageView.setImageResource(objectTemoinList.get(position).getDrawble());
     }
 
     @Override
@@ -47,12 +49,14 @@ List<objectTemoin> objectTemoinList ;
         private TextView caracteristique1 ;
         private TextView caracteristique2 ;
         private TextView caracteristique3 ;
+        private ImageView imageView;
            public MyViewHolder( View itemView) {
                super(itemView);
                tv_name= (TextView) itemView.findViewById(R.id.name);
                caracteristique1 =(TextView) itemView.findViewById(R.id.caracteristique1);
                caracteristique2=(TextView) itemView.findViewById(R.id.caracteristique2);
                caracteristique3=(TextView) itemView.findViewById(R.id.caracteristique3);
+               imageView = (ImageView) itemView.findViewById(R.id.imagetemoin);
            }
        }
 

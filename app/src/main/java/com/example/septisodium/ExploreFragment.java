@@ -63,16 +63,13 @@ public class ExploreFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
             objectTemoinList= new ArrayList<>();
-        objectTemoinList.add(new objectTemoin("un nom","truc1","truc2","truc3"));
-        objectTemoinList.add(new objectTemoin("un nom3","truc1","truc2","truc3"));
-        objectTemoinList.add(new objectTemoin("un nom4","truc1","truc2","truc3"));
-        objectTemoinList.add(new objectTemoin("un nom5","truc1","truc2","truc3"));
-        objectTemoinList.add(new objectTemoin("un nom","truc1","truc2","truc3"));
-        objectTemoinList.add(new objectTemoin("un nom3","truc1","truc2","truc3"));
-        objectTemoinList.add(new objectTemoin("un nom4","truc1","truc2","truc3"));
-        objectTemoinList.add(new objectTemoin("un nom5","truc1","truc2","truc3"));
+        objectTemoinList.add(new objectTemoin("Temple Diana & Apolon","Largeur: 9.97m","profondeur(est): 5.35m","profondeur(ouest): 5.57m",R.drawable.khemissa));
+        objectTemoinList.add(new objectTemoin("Temple Neptune","Largeur: 5.50m","profondeur: 5.35m","",R.drawable.khemissa));
+        objectTemoinList.add(new objectTemoin("Temple 3 Couloirs","longeur interieur: 10.70m","longeur exterieur: 12.65m","",R.drawable.khemissa));
+        objectTemoinList.add(new objectTemoin("Bassin rectangle","longeur: 47.50m","largeur: 13.20m","profondeur: 1.40m",R.drawable.khemissa));
+        objectTemoinList.add(new objectTemoin("Bassin milieu","longeur: 0.90m","profondeur: 0.65m","",R.drawable.khemissa));
+        objectTemoinList.add(new objectTemoin("Bassin mi-rond","longeur(rectangle): 18.50m","largeur(rectangle): 23.60m","Rayon: 26.50m",R.drawable.khemissa));
 
-        objectTemoinList.add(new objectTemoin("un nom2","truc1","truc2","truc3"));
 
     }
 

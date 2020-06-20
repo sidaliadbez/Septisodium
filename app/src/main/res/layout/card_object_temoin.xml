@@ -11,24 +11,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
     <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/imagetemoin"
         android:layout_width="match_parent"
         android:layout_height="70dp"/>
     <TextView
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
+        android:textSize="12dp"
+        android:textStyle="bold"
         android:gravity="center"
         android:text="hell"/>
     <TextView
+        android:layout_marginTop="7dp"
         android:id="@+id/caracteristique1"
         android:layout_width="match_parent"
+        android:textSize="12dp"
         android:layout_height="wrap_content"
         android:paddingLeft="10dp"
         android:text="caracteristique1 "/>
     <TextView
         android:id="@+id/caracteristique2"
         android:layout_width="match_parent"
+        android:textSize="12dp"
         android:layout_height="wrap_content"
         android:paddingLeft="10dp"
         android:text="caracteristique2 "/>
@@ -36,6 +42,7 @@
         android:id="@+id/caracteristique3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="12dp"
         android:paddingLeft="10dp"
         android:text="caracteristique3 "/>
 

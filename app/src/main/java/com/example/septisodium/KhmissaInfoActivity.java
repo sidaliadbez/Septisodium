@@ -77,6 +77,116 @@ private GoogleMap map ;
             }
         });
 
+        LinearLayout linearLayout1 ;
+        final LinearLayout expandableLayout1 ;
+        linearLayout1= findViewById(R.id.layout3);
+        expandableLayout1= findViewById(R.id.layout4);
+        expandableLayout1.setVisibility(View.GONE);
+        final ImageView imageView1 = findViewById(R.id.down1);
+
+        linearLayout1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!exp){
+                    exp=true ;
+                    imageView1.setImageResource(R.drawable.ic_up);
+                    expandableLayout1.setVisibility(View.VISIBLE);
+                }else {
+                    exp=false ;
+                    imageView1.setImageResource(R.drawable.ic_down);
+                    expandableLayout1.setVisibility(View.GONE);
+                }
+            }
+        });
+
+    LinearLayout linearLayout2 ;
+    final LinearLayout expandableLayout2 ;
+    linearLayout2= findViewById(R.id.layout5);
+    expandableLayout2= findViewById(R.id.layout6);
+    expandableLayout2.setVisibility(View.GONE);
+    final ImageView imageView2 = findViewById(R.id.down2);
+
+    linearLayout2.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            if(!exp){
+                exp=true ;
+                imageView2.setImageResource(R.drawable.ic_up);
+                expandableLayout2.setVisibility(View.VISIBLE);
+            }else {
+                exp=false ;
+                imageView2.setImageResource(R.drawable.ic_down);
+                expandableLayout2.setVisibility(View.GONE);
+            }
+        }
+    });
+
+        LinearLayout linearLayout3;
+        final LinearLayout expandableLayout3 ;
+        linearLayout3= findViewById(R.id.layout7);
+        expandableLayout3= findViewById(R.id.layout8);
+        expandableLayout3.setVisibility(View.GONE);
+        final ImageView imageView3 = findViewById(R.id.down3);
+
+        linearLayout3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!exp){
+                    exp=true ;
+                    imageView3.setImageResource(R.drawable.ic_up);
+                    expandableLayout3.setVisibility(View.VISIBLE);
+                }else {
+                    exp=false ;
+                    imageView3.setImageResource(R.drawable.ic_down);
+                    expandableLayout3.setVisibility(View.GONE);
+                }
+            }
+        });
+        LinearLayout linearLayout4;
+        final LinearLayout expandableLayout4 ;
+        linearLayout4= findViewById(R.id.layout9);
+        expandableLayout4= findViewById(R.id.layout10);
+        expandableLayout4.setVisibility(View.GONE);
+        final ImageView imageView4 = findViewById(R.id.down4);
+
+        linearLayout4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!exp){
+                    exp=true ;
+                    imageView4.setImageResource(R.drawable.ic_up);
+                    expandableLayout4.setVisibility(View.VISIBLE);
+                }else {
+                    exp=false ;
+                    imageView4.setImageResource(R.drawable.ic_down);
+                    expandableLayout4.setVisibility(View.GONE);
+                }
+            }
+        });
+
+
+        LinearLayout linearLayout5;
+        final LinearLayout expandableLayout5 ;
+        linearLayout5= findViewById(R.id.layout11);
+        expandableLayout5= findViewById(R.id.layout12);
+        expandableLayout5.setVisibility(View.GONE);
+        final ImageView imageView5 = findViewById(R.id.down5);
+
+        linearLayout5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!exp){
+                    exp=true ;
+                    imageView5.setImageResource(R.drawable.ic_up);
+                    expandableLayout5.setVisibility(View.VISIBLE);
+                }else {
+                    exp=false ;
+                    imageView5.setImageResource(R.drawable.ic_down);
+                    expandableLayout5.setVisibility(View.GONE);
+                }
+            }
+        });
+
 
 
        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation) ;

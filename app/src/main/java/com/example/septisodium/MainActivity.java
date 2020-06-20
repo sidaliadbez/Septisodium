@@ -37,15 +37,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        View card2 = findViewById(R.id.cardView2);
-        card2.setOnClickListener(new  View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, StepbyStepActivity.class);
-                startActivity(intent);
-                overridePendingTransition(0,0);
-            }
-        });
+
 
         View card3 = findViewById(R.id.cardView3);
         card3.setOnClickListener(new  View.OnClickListener() {

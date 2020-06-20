@@ -44,8 +44,6 @@ private GoogleMap map ;
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map) ;
         mapFragment.getMapAsync(this);
-
-
         View card = findViewById(R.id.objectcard);
 
         card.setOnClickListener(new  View.OnClickListener() {
@@ -124,10 +122,15 @@ private GoogleMap map ;
     public void onMapReady(GoogleMap googleMap) {
         map= googleMap ;
 
-        LatLng khemissa = new LatLng(36.194336, 7.656217) ;
-        map.addMarker((new MarkerOptions().position(khemissa).title("khemissa")));
-        map.moveCamera(CameraUpdateFactory.newLatLng(khemissa));
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(khemissa,12f));
+        LatLng Alger = new LatLng(36.195864, 7.686330) ;
+        map.addMarker((new MarkerOptions().position(new LatLng(36.195450, 7.699433)).title("نقطة انطلاق المنبع المائي")));
+        map.addMarker((new MarkerOptions().position(new LatLng(36.193194, 7.676111 )).title("نقطة التحصيل")));
+        map.addMarker((new MarkerOptions().position(new LatLng(36.195400, 7.676117 )).title("المسار الثاني")));
+        map.addMarker((new MarkerOptions().position(new LatLng(36.196950, 7.674217 )).title("البئر")));
+        map.addMarker((new MarkerOptions().position(new LatLng(36.196067, 7.675917 )).title("القناة الناقلة السطحية")));
+        map.addMarker((new MarkerOptions().position(new LatLng(36.197883, 7.674000 )).title(" القناة السطحية")));
+        map.moveCamera(CameraUpdateFactory.newLatLng(Alger));
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(Alger,12f));
     }
 
 

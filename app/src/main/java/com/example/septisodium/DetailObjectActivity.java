@@ -41,7 +41,7 @@ public class DetailObjectActivity extends AppCompatActivity {
         flightsFragment = new FlightsFragment();
         travelFragment = new TravelFragment();
 
-        tabLayout.setupWithViewPager(viewPager);
+
 
         DetailObjectActivity.ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), 0);
         viewPagerAdapter.addFragment(exploreFragment, "Explore");

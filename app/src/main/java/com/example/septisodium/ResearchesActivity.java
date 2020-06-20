@@ -22,7 +22,7 @@ public class ResearchesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_researches);
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation) ;
     Menu menu = bottomNavigationView.getMenu();
-        MenuItem menuItem = menu.getItem(1);
+        MenuItem menuItem = menu.getItem(2);
         menuItem.setChecked(true);
 
         TextView textView = findViewById(R.id.text);
@@ -38,12 +38,7 @@ public class ResearchesActivity extends AppCompatActivity {
                         startActivity(intent);
                         overridePendingTransition(0,0);
                         break;
-                    case R.id.page_2:
 
-                        Intent intent1 = new Intent(ResearchesActivity.this, StepbyStepActivity.class);
-                        startActivity(intent1);
-                        overridePendingTransition(0,0);
-                        break;
                     case R.id.page_3:
 
                         Intent intent2 = new Intent(ResearchesActivity.this, MainActivity.class);

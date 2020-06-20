@@ -41,8 +41,7 @@ public class StepbyStepActivity extends AppCompatActivity {
                                 startActivity(intent);
                                 overridePendingTransition(0,0);
                                 break;
-                            case R.id.page_2:
-                                break;
+
                             case R.id.page_3:
                                 Intent intent2 = new Intent(StepbyStepActivity.this, MainActivity.class);
                                 startActivity(intent2);

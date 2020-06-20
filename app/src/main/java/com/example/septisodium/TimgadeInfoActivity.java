@@ -76,7 +76,7 @@ public class TimgadeInfoActivity extends FragmentActivity implements OnMapReadyC
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation) ;
         Menu menu = bottomNavigationView.getMenu();
-        MenuItem menuItem = menu.getItem(1);
+        MenuItem menuItem = menu.getItem(2);
         menuItem.setChecked(true);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -87,11 +87,6 @@ public class TimgadeInfoActivity extends FragmentActivity implements OnMapReadyC
                     case R.id.page_1:
                         Intent intent = new Intent(TimgadeInfoActivity.this, FaqActivity.class);
                         startActivity(intent);
-                        overridePendingTransition(0,0);
-                        break;
-                    case R.id.page_2:
-                        Intent intent1 = new Intent(TimgadeInfoActivity.this, StepbyStepActivity.class);
-                        startActivity(intent1);
                         overridePendingTransition(0,0);
                         break;
                     case R.id.page_3:

@@ -191,7 +191,7 @@ private GoogleMap map ;
 
        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation) ;
         Menu menu = bottomNavigationView.getMenu();
-        MenuItem menuItem = menu.getItem(1);
+        MenuItem menuItem = menu.getItem(2);
         menuItem.setChecked(true);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -204,11 +204,7 @@ private GoogleMap map ;
                         startActivity(intent);
                         overridePendingTransition(0,0);
                         break;
-                    case R.id.page_2:
-                        Intent intent1 = new Intent(KhmissaInfoActivity.this, StepbyStepActivity.class);
-                        startActivity(intent1);
-                        overridePendingTransition(0,0);
-                        break;
+
                     case R.id.page_3:
                         Intent intent2 = new Intent(KhmissaInfoActivity.this, MainActivity.class);
                         startActivity(intent2);

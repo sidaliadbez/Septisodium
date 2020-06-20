@@ -66,11 +66,7 @@ public class DetailObjectActivity extends AppCompatActivity {
                         startActivity(intent);
                         overridePendingTransition(0,0);
                         break;
-                    case R.id.page_2:
-                        Intent intent1 = new Intent(DetailObjectActivity.this, StepbyStepActivity.class);
-                        startActivity(intent1);
-                        overridePendingTransition(0,0);
-                        break;
+
                     case R.id.page_3:
                         Intent intent2 = new Intent(DetailObjectActivity.this, MainActivity.class);
                         startActivity(intent2);

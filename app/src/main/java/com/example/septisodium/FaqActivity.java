@@ -48,11 +48,6 @@ body.add(contenu2);
                             case R.id.page_1:
 
                                 break;
-                            case R.id.page_2:
-                                Intent intent1 = new Intent(FaqActivity.this, StepbyStepActivity.class);
-                                startActivity(intent1);
-                                overridePendingTransition(0,0);
-                                break;
                             case R.id.page_3:
                                 Intent intent2 = new Intent(FaqActivity.this, MainActivity.class);
                                 startActivity(intent2);

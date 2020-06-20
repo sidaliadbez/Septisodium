@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation) ;
        // bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
     Menu menu = bottomNavigationView.getMenu();
-        MenuItem menuItem = menu.getItem(2);
+        MenuItem menuItem = menu.getItem(1);
         menuItem.setChecked(true);
         TextView textView = findViewById(R.id.textseptiso);
         textView.bringToFront();
@@ -69,12 +69,7 @@ public class MainActivity extends AppCompatActivity {
                                 startActivity(intent);
                                 overridePendingTransition(0,0);
                                 break;
-                            case R.id.page_2:
 
-                                Intent intent1 = new Intent(MainActivity.this, StepbyStepActivity.class);
-                                startActivity(intent1);
-                                overridePendingTransition(0,0);
-                                break;
                             case R.id.page_3:
 
                                 break;

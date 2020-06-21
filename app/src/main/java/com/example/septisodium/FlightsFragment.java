@@ -1,5 +1,6 @@
 package com.example.septisodium;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -79,6 +80,15 @@ public class FlightsFragment extends Fragment {
         layoutManager = new GridLayoutManager(getContext(),2);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(recyclerviewAdapter);
+        recyclerviewAdapter.setOnItemClickListener(new RecyclerviewAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                Intent intent = new Intent(getContext(), StepbyStepActivity.class);
+                intent.putExtra("photo",objectTemoinList.get(position).getDrawble()) ;
+                startActivity(intent);
+
+            }
+        });
         // Inflate the layout for this fragment
         return v;
     }

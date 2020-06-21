@@ -1,5 +1,6 @@
 package com.example.septisodium;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -83,6 +85,15 @@ public class ExploreFragment extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
        recyclerView.setAdapter(recyclerviewAdapter);
         // Inflate the layout for this fragment
+        recyclerviewAdapter.setOnItemClickListener(new RecyclerviewAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                Intent intent = new Intent(getContext(), StepbyStepActivity.class);
+                intent.putExtra("photo",objectTemoinList.get(position).getDrawble()) ;
+                startActivity(intent);
+
+            }
+        });
         return v;
     }
 }

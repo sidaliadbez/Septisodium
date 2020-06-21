@@ -25,10 +25,10 @@ public class StepbyStepActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stepbystep);
-//        Intent intent = getIntent();
-//        Integer val = intent.getIntExtra("photo",-1);
-//        System.out.println("######################### "+val);
-//        ImageView imageView= findViewById(R.id.photo);
-//        imageView.setImageResource(val);
+        Intent intent = getIntent();
+        Integer val = intent.getIntExtra("photo",0);
+        System.out.println("######################### "+val);
+        ImageView imageView= findViewById(R.id.photo);
+        imageView.setImageResource(val);
     }
 }

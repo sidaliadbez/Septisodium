@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Switch;
@@ -24,39 +25,10 @@ public class StepbyStepActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stepbystep);
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation) ;
-       Menu menu = bottomNavigationView.getMenu();
-        MenuItem menuItem = menu.getItem(3);
-        menuItem.setChecked(true);
-        TextView textView = findViewById(R.id.text);
-        textView.bringToFront();
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-                    @Override
-                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
-                        switch (item.getItemId()) {
-                            case R.id.page_1:
-                                Intent intent = new Intent(StepbyStepActivity.this, FaqActivity.class);
-                                startActivity(intent);
-                                overridePendingTransition(0,0);
-                                break;
-
-                            case R.id.page_3:
-                                Intent intent2 = new Intent(StepbyStepActivity.this, MainActivity.class);
-                                startActivity(intent2);
-                                overridePendingTransition(0,0);
-                                break;
-                            case R.id.page_4:
-                                Intent intent3 = new Intent(StepbyStepActivity.this, ResearchesActivity.class);
-                                startActivity(intent3);
-                                overridePendingTransition(0,0);
-                                break;
-
-                        }
-
-                        return true;
-                    }
-                });
+//        Intent intent = getIntent();
+//        Integer val = intent.getIntExtra("photo",-1);
+//        System.out.println("######################### "+val);
+//        ImageView imageView= findViewById(R.id.photo);
+//        imageView.setImageResource(val);
     }
 }

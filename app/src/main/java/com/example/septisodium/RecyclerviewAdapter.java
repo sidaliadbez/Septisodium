@@ -1,10 +1,13 @@
 package com.example.septisodium;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -19,6 +22,7 @@ List<objectTemoin> objectTemoinList ;
     public RecyclerviewAdapter(Context context, List<objectTemoin> objectTemoinList) {
         this.context = context;
         this.objectTemoinList = objectTemoinList;
+
     }
 
     @NonNull
@@ -27,6 +31,21 @@ List<objectTemoin> objectTemoinList ;
         View v ;
         v= LayoutInflater.from((context)).inflate(R.layout.card_object_temoin,parent,false);
         MyViewHolder vHolder = new MyViewHolder(v);
+        ImageView imageView= v.findViewById(R.id.imagetemoin) ;
+        imageView.setOnClickListener(   new ImageView.OnClickListener (){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, StepbyStepActivity.class);
+               // ImageView imageView= v.findViewById(R.id.photo);
+                //intent.putExtra("photo",imageView.getDrawable().);
+//                System.out.println("/////////////// "+imageView.getDrawable());
+                context.startActivity(intent);
+              //  overridePendingTransition(0,0);
+            }
+        });
+
+
         return vHolder;
     }
 
@@ -37,6 +56,11 @@ List<objectTemoin> objectTemoinList ;
         holder.caracteristique2.setText(objectTemoinList.get(position).getCaracteristique2());
         holder.caracteristique3.setText(objectTemoinList.get(position).getCaracteristique3());
         holder.imageView.setImageResource(objectTemoinList.get(position).getDrawble());
+        if (objectTemoinList.get(position).getCaracteristique1()==""){
+            holder.imageView.getLayoutParams().height=350 ;
+            holder.imageView.requestLayout();
+            //            holder.imageView.setLayoutParams(new ImageView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 120));
+        }
     }
 
     @Override

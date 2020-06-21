@@ -62,12 +62,11 @@ public class FlightsFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
         objectTemoinList= new ArrayList<>();
-        objectTemoinList.add(new objectTemoin("un nom","truc1","truc2","truc3",R.drawable.khemissa));
-        objectTemoinList.add(new objectTemoin("un nom3","truc1","truc2","truc3",R.drawable.khemissa));
-        objectTemoinList.add(new objectTemoin("un nom4","truc1","truc2","truc3",R.drawable.khemissa));
-        objectTemoinList.add(new objectTemoin("un nom5","truc1","truc2","truc3",R.drawable.khemissa));
-        objectTemoinList.add(new objectTemoin("un nom","truc1","truc2","truc3",R.drawable.khemissa));
-        objectTemoinList.add(new objectTemoin("un nom3","truc1","truc2","truc3",R.drawable.khemissa));
+        objectTemoinList.add(new objectTemoin("Temple Diana & Napolon","","","",R.drawable.plan_diana_apolon));
+        objectTemoinList.add(new objectTemoin("Temple Neptune","","","",R.drawable.plan_neptune));
+        objectTemoinList.add(new objectTemoin("Temple 3 Couloirs","","","",R.drawable.plan_3couloirs));
+        objectTemoinList.add(new objectTemoin("Bassin","","","",R.drawable.plan_bassin));
+
 
     }
 

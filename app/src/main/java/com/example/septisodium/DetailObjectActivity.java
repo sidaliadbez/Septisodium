@@ -46,7 +46,7 @@ public class DetailObjectActivity extends AppCompatActivity {
         DetailObjectActivity.ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), 0);
         viewPagerAdapter.addFragment(exploreFragment, "Etidifice");
         viewPagerAdapter.addFragment(flightsFragment, "Plan");
-        viewPagerAdapter.addFragment(travelFragment, "Strucutre");
+        viewPagerAdapter.addFragment(travelFragment, "Element Decoratif");
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
 

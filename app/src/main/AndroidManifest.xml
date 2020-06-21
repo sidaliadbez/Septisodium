@@ -27,6 +27,7 @@
         <activity android:name=".KhmissaInfoActivity"/>
         <activity android:name=".TimgadeInfoActivity"/>
         <activity android:name=".DetailObjectActivity"/>
+        <activity android:name=".DetailObjectTimgadeActivity"/>
     </application>
 
 </manifest>

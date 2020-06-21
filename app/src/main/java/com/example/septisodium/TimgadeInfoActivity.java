@@ -44,7 +44,7 @@ public class TimgadeInfoActivity extends FragmentActivity implements OnMapReadyC
         card.setOnClickListener(new  View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TimgadeInfoActivity.this, DetailObjectActivity.class);
+                Intent intent = new Intent(TimgadeInfoActivity.this, DetailObjectTimgadeActivity.class);
                 startActivity(intent);
                 overridePendingTransition(0,0);
             }

@@ -37,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:paddingLeft="10dp"
-                android:paddingTop="20dp"
+                android:paddingTop="10dp"
                 android:text="About Khemissa"
                 android:textColor="#E4C29E"
                 android:textSize="25dp" />

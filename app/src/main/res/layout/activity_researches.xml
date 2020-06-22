@@ -160,7 +160,7 @@ Reuters visualisations, based on data from NASA’s Global Modeling and Data Ass
                         <ImageView
                             android:layout_width="206dp"
                             android:layout_height="match_parent"
-                            android:src="@drawable/timgade"
+                            android:src="@drawable/timgade1"
                             android:padding="10dp"/>
                         <TextView
                             android:layout_width="match_parent"

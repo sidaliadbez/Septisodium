@@ -172,12 +172,12 @@ Reuters visualisations, based on data from NASA’s Global Modeling and Data Ass
                     android:src="@drawable/ic_gps" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:paddingLeft="5dp"
                     android:layout_weight="8"
                     android:paddingTop="4dp"
-                    android:text="khenchela" />
+                    android:text="The starting point of the water source" />
 
                 <ImageView
                     android:id="@+id/down"
@@ -201,13 +201,13 @@ Reuters visualisations, based on data from NASA’s Global Modeling and Data Ass
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="15dp"
-                    android:text="latitude " />
+                    android:text="latitude: 36.195450 " />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="15dp"
-                    android:text="longitude" />
+                    android:text="longitude: 7.699433" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -239,12 +239,12 @@ Reuters visualisations, based on data from NASA’s Global Modeling and Data Ass
                     android:src="@drawable/ic_gps" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:paddingLeft="5dp"
                     android:layout_weight="8"
                     android:paddingTop="4dp"
-                    android:text="khenchela" />
+                    android:text="Collection point" />
 
                 <ImageView
                     android:id="@+id/down1"
@@ -268,13 +268,13 @@ Reuters visualisations, based on data from NASA’s Global Modeling and Data Ass
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="15dp"
-                    android:text="latitude " />
+                    android:text="latitude: 36.193194" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="15dp"
-                    android:text="longitude" />
+                    android:text="longitude: 7.676111" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -308,12 +308,12 @@ Reuters visualisations, based on data from NASA’s Global Modeling and Data Ass
                     android:src="@drawable/ic_gps" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:paddingLeft="5dp"
                     android:layout_weight="8"
                     android:paddingTop="4dp"
-                    android:text="khenchela" />
+                    android:text="The second track" />
 
                 <ImageView
                     android:id="@+id/down2"
@@ -337,13 +337,13 @@ Reuters visualisations, based on data from NASA’s Global Modeling and Data Ass
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="15dp"
-                    android:text="latitude " />
+                    android:text="latitude: 36.195400 " />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="15dp"
-                    android:text="longitude" />
+                    android:text="longitude: 7.676117" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -375,12 +375,12 @@ Reuters visualisations, based on data from NASA’s Global Modeling and Data Ass
                     android:src="@drawable/ic_gps" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:paddingLeft="5dp"
                     android:layout_weight="8"
                     android:paddingTop="4dp"
-                    android:text="khenchela" />
+                    android:text="The well" />
 
                 <ImageView
                     android:id="@+id/down3"
@@ -404,13 +404,13 @@ Reuters visualisations, based on data from NASA’s Global Modeling and Data Ass
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="15dp"
-                    android:text="latitude " />
+                    android:text="latitude: 36.196950 " />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="15dp"
-                    android:text="longitude" />
+                    android:text="longitude: 7.674217" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -442,12 +442,12 @@ Reuters visualisations, based on data from NASA’s Global Modeling and Data Ass
                     android:src="@drawable/ic_gps" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:paddingLeft="5dp"
                     android:layout_weight="8"
                     android:paddingTop="4dp"
-                    android:text="khenchela" />
+                    android:text="Surface Conduit" />
 
                 <ImageView
                     android:id="@+id/down4"
@@ -471,13 +471,13 @@ Reuters visualisations, based on data from NASA’s Global Modeling and Data Ass
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="15dp"
-                    android:text="latitude " />
+                    android:text="latitude: 36.196067 " />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="15dp"
-                    android:text="longitude" />
+                    android:text="longitude:7.675917" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -509,12 +509,12 @@ Reuters visualisations, based on data from NASA’s Global Modeling and Data Ass
                     android:src="@drawable/ic_gps" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:paddingLeft="5dp"
                     android:layout_weight="8"
                     android:paddingTop="4dp"
-                    android:text="khenchela" />
+                    android:text="Surface channel" />
 
                 <ImageView
                     android:id="@+id/down5"
@@ -538,13 +538,13 @@ Reuters visualisations, based on data from NASA’s Global Modeling and Data Ass
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="15dp"
-                    android:text="latitude " />
+                    android:text="latitude: 36.197883 " />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="15dp"
-                    android:text="longitude" />
+                    android:text="longitude: 7.674000" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

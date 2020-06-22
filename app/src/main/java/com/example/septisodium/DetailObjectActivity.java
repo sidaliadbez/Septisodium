@@ -26,6 +26,7 @@ public class DetailObjectActivity extends AppCompatActivity {
     private ExploreFragment exploreFragment;
     private FlightsFragment flightsFragment;
     private TravelFragment travelFragment;
+    private ReconstitutionKhemissa reconstitutionKhemissa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +41,7 @@ public class DetailObjectActivity extends AppCompatActivity {
         exploreFragment = new ExploreFragment();
         flightsFragment = new FlightsFragment();
         travelFragment = new TravelFragment();
+        reconstitutionKhemissa = new ReconstitutionKhemissa();
 
 
 
@@ -47,6 +49,7 @@ public class DetailObjectActivity extends AppCompatActivity {
         viewPagerAdapter.addFragment(exploreFragment, "Etidifice");
         viewPagerAdapter.addFragment(flightsFragment, "Plan");
         viewPagerAdapter.addFragment(travelFragment, "Element Decoratif");
+        viewPagerAdapter.addFragment(reconstitutionKhemissa, "Reconstitution");
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
 

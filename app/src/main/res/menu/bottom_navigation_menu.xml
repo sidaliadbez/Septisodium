@@ -4,7 +4,7 @@
         android:id="@+id/page_1"
         android:enabled="true"
         android:icon="@drawable/ic_question"
-        android:title="FAQ"/>
+        android:title="Q/A"/>
     <item
         android:id="@+id/page_3"
         android:enabled="true"

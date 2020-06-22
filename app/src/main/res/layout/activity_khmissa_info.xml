@@ -581,7 +581,7 @@ Reuters visualisations, based on data from NASA’s Global Modeling and Data Ass
                             android:layout_height="match_parent"
                             android:paddingHorizontal="15dp"
                             android:paddingTop="7dp"
-                            android:text="Temoins archiologique " />
+                            android:text="Archaeological witnesses " />
 
                         <ImageView
                             android:layout_width="21dp"

@@ -111,10 +111,9 @@ public class TimgadeInfoActivity extends FragmentActivity implements OnMapReadyC
     @Override
     public void onMapReady(GoogleMap googleMap) {
         map= googleMap ;
-        LatLng timgade = new LatLng(36.194336, 7.656217) ;
-        map.addMarker((new MarkerOptions().position(timgade).title("khemissa")));
+        LatLng timgade = new LatLng(35.484448, 6.467640) ;
         //map.moveCamera(CameraUpdateFactory.newLatLng(khemissa));
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(timgade,12f));
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(timgade,16f));
     }
 
     @Override
